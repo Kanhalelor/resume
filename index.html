@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Resume</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./src/styles.css">
+  </head>
+  <body>
+    <!-- print button -->
+    <div class="print"><i class="fa fa-print"></i></div>
+    <!-- Rooot body starts -->
+    <div id="root">
+      <!-- Side navigation bar section starts-->
+      <div class="sidebar">
+        <!-- Info div starts -->
+        <div class="info">
+          <h2 class="name">JOHN DOE</h2>
+          <span class="occupation">Web Developer</span>
+          <!-- Avatar image section starts -->
+          <div class="avatar">
+            <img src="https://i.pravatar.cc/200" alt="pravatar" />
+          </div>
+        </div>
+        <h2 class="objective">
+          OBJECTIVE
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
+          magnam ab architecto!
+        </p>
+        <!-- Social Platforms div -->
+        <div class="social-div">
+          <h2 class="social-title">I AM LIVE</h2>
+          <ul class="social-ul">
+            <li>
+              <a href="#"><i class="fa fa-twitter"></i></a
+              ><span> twitter.com/john</span>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-facebook"></i></a
+              ><span> facebook.com/john</span>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-instagram"></i></a
+              ><span> instagram.com/john</span>
+            </li>
+          </ul>
+        </div>
+        <!-- Social platform div ends -->
+        <!-- Barcode div -->
+        <div class="barcode"></div>
+      </div>
+      <!-- Main content div starts -->
+      <div class="main-content">
+        <div class="header">
+          <div class="about">
+            <h2>ABOUT</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <!-- Contact Div -->
+          <div class="contact">
+            <h2>CONTACT</h2>
+            <ul>
+              <li>
+                <i class="fa fa-address-book"></i> 15 Wall Street Avenue, NYC
+              </li>
+              <li><i class="fa fa-phone-square"></i> +414 654 65958</li>
+              <li><i class="fa fa-envelope-square"></i> john@iway.io</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Skills div -->
+        <div class="skills-div">
+          <!-- Inner tools div -->
+          <div class="tools">
+            <h2>TOOLS</h2>
+            <ul>
+              <li>Vs Code</li>
+              <progress value="80" max="100"></progress>
+              <li>Git</li>
+              <progress value="90" max="100"></progress>
+              <li>Jupyter</li>
+              <progress value="70" max="100"></progress>
+            </ul>
+          </div>
+          <!-- Inner tools div ends -->
+
+          <!-- Inner skills div  -->
+          <div class="skills">
+            <h2>SKILLS</h2>
+            <ul>
+              <li>Python</li>
+              <progress value="60" max="100"></progress>
+              <li>Node</li>
+              <progress value="50" max="100"></progress>
+              <li>Pandas</li>
+              <progress value="70" max="100"></progress>
+            </ul>
+          </div>
+        </div>
+        <!-- Inner skills div ends -->
+        <div class="education">
+          <h2>EDUCATION</h2>
+          <ul>
+            <li>
+              <span class="qualification">Bachelor in Computer Science</span
+              ><span class="date"> // 02-04-2018</span>
+            </li>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consectetur, soluta!
+            </p>
+            <li>
+              <span class="qualification">Certificate in Big Data Tech</span
+              ><span class="date"> // 02-04-2018</span>
+            </li>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora
+              neque dolore minima.
+            </p>
+            <li>
+              <span class="qualification">Facebook Hacker Cup Winner</span
+              ><span class="date"> // 02-04-2018</span>
+            </li>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem
+              ullam mollitia vero!
+            </p>
+          </ul>
+        </div>
+        <div class="work-exp-div">
+          <h2>EXPERIENCE</h2>
+          <div class="exp">
+            <div class="year">
+              <span class="yr">2018</span><br />
+              <span>Present</span>
+            </div>
+            <div class="company">
+              <h4>Google INC</h4>
+              <br />
+              <small>Microprocessor Engineer</small>
+            </div>
+            <div class="work-done">
+              <h4>ABOUT EXPERIENCE</h4>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Aliquam, repellat.
+              </p>
+            </div>
+          </div>
+          <div class="exp">
+            <div class="year">
+              <span class="yr">2019</span><br />
+              <span>2015 - 2017</span>
+            </div>
+            <div class="company">
+              <h4>Apple INC</h4>
+              <br />
+              <small>Chief Operation Manager</small>
+            </div>
+            <div class="work-done">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Aliquam, repellat.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Work exp-div ends -->
+        <!-- Languages div  -->
+        <div class="languages-div">
+          <div class="langs">
+            <h4>LANGUAGES</h4>
+            <ul>
+              <li>English</li>
+              <li>Afrikans</li>
+              <li>Spanish</li>
+            </ul>
+          </div>
+          <div class="interests">
+            <h4>INTERESTS</h4>
+            <ul>
+              <li>Chess</li>
+              <li>Coding</li>
+              <li>Photography</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Languages div ends -->
+      </div>
+    </div>
+    <!-- Main content div ends -->
+
+    <script>
+      document.querySelector(".print .fa").addEventListener("click", (event) => {
+        event.preventDefault();
+        event.target.parentElement.style.display = "none";
+        window.print();
+        event.target.parentElement.style.display = "grid";
+        });
+    </script>
+  </body>
+</html>
