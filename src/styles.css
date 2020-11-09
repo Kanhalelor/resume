@@ -18,6 +18,7 @@ body {
   width: var(--full-w);
   height: var(--full-vh);
   line-height: var(--lh);
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 /* CSS Variables */
@@ -95,7 +96,6 @@ body {
 
 /* Sidebar div */
 .sidebar {
-  height: var(--full-h);
   width: 30%;
   background-color: var(--white);
   text-align: var(--text-center);
