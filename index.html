@@ -3,8 +3,9 @@
   <head>
     <title>Resume</title>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./src/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="./src/styles.css" />
   </head>
   <body>
     <!-- print button -->
@@ -22,13 +23,15 @@
             <img src="https://i.pravatar.cc/200" alt="pravatar" />
           </div>
         </div>
-        <h2 class="objective">
-          OBJECTIVE
-        </h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
-          magnam ab architecto!
-        </p>
+        <div class="objective-div">
+          <h2 class="objective">
+            OBJECTIVE
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consequuntur magnam ab architecto!
+          </p>
+        </div>
         <!-- Social Platforms div -->
         <div class="social-div">
           <h2 class="social-title">I AM LIVE</h2>
@@ -198,7 +201,7 @@
         event.target.parentElement.style.display = "none";
         window.print();
         event.target.parentElement.style.display = "grid";
-        });
+      });
     </script>
   </body>
 </html>
