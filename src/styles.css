@@ -15,8 +15,9 @@ img {
 }
 /* body */
 body {
-  width: 100%;
-  height: 100vh;
+  width: var(--full-w);
+  height: var(--full-vh);
+  line-height: var(--lh);
 }
 
 /* CSS Variables */
@@ -35,6 +36,7 @@ body {
   --half-w: 50%;
 
   --full-h: 100%;
+  --full-vh: 100vh;
 
   --mg: 1em;
   --mg-top: 1em;
@@ -53,6 +55,7 @@ body {
   --wrap: wrap;
 
   --centered: 0 auto;
+  --lh: 1.5;
 
   --primary-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
     0 10px 10px rgba(0, 0, 0, 0.22);
@@ -94,6 +97,7 @@ body {
 .sidebar {
   height: var(--full-h);
   width: 30%;
+  background-color: var(--white);
   text-align: var(--text-center);
 }
 /* info div */
@@ -145,7 +149,7 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: var(--wrap);
   padding: var(--pd) 0;
 }
 /* sidebar social likks */
@@ -319,10 +323,15 @@ body {
   width: var(--half-w);
 }
 
-/* media queries */
 @media only screen and (max-width: 600px) {
+  body {
+    height: var(--full-h);
+  }
   #root {
-    display: var(--d-block);
+    display: flex;
+    flex-flow: column;
+    flex: 1;
+    width: var(--full-w);
   }
   .sidebar {
     width: var(--full-w);
