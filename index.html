@@ -2,14 +2,18 @@
 <html>
   <head>
     <title>Resume Template</title>
-    <meta charset="UTF-8">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./src/styles.css">
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./src/styles.css" />
   </head>
   <body>
-    <!-- print button -->
-    <div class="print"><i class="fa fa-print"></i></div>
     <!-- Rooot body starts -->
     <div id="root">
       <!-- Side navigation bar section starts-->
@@ -37,15 +41,18 @@
           <h2 class="social-title">I AM LIVE</h2>
           <ul class="social-ul">
             <li>
-              <a href="#"><i class="fa fa-twitter"></i></a
+              <a href="twitter.com/john"
+                ><i class="fa fa-twitter twitter"></i></a
               ><span> twitter.com/john</span>
             </li>
             <li>
-              <a href="#"><i class="fa fa-facebook"></i></a
+              <a href="https://gnpkt.csb.app/"
+                ><i class="fa fa-facebook facebook"></i></a
               ><span> facebook.com/john</span>
             </li>
             <li>
-              <a href="#"><i class="fa fa-instagram"></i></a
+              <a href="instagram.com/john"
+                ><i class="fa fa-instagram instagram"></i></a
               ><span> instagram.com/john</span>
             </li>
           </ul>
@@ -163,6 +170,13 @@
               <small>Chief Operation Manager</small>
             </div>
             <div class="work-done">
+              <h4>ABOUT EXPERIENCE</h4>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Aliquam, repellat.
+              </p>
+            </div>
+            <div class="work-done">
               <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Aliquam, repellat.
@@ -194,14 +208,5 @@
       </div>
     </div>
     <!-- Main content div ends -->
-
-    <script>
-      document.querySelector(".print .fa").addEventListener("click", (event) => {
-        event.preventDefault();
-        event.target.parentElement.style.display = "none";
-        window.print();
-        event.target.parentElement.style.display = "grid";
-      });
-    </script>
   </body>
 </html>

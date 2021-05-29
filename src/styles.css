@@ -1,28 +1,10 @@
 /* image address: https://assets.materialup.com/uploads/cc28ce62-92b4-4f23-8fcc-6ba22ae09fcf/preview.jpg */
-/* Global selector */
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  transition: 0.3s linear;
-}
-/* images */
-img {
-  box-sizing: content-box;
-  object-fit: cover;
-}
-/* body */
-body {
-  width: var(--full-w);
-  height: var(--full-vh);
-  line-height: var(--lh);
-  font-family: 'Nunito Sans', sans-serif;
-}
 
 /* CSS Variables */
 :root {
+  --d-flex: flex;
+  --f-col: column;
+  --f-row: row;
   --d-block: block;
   --primary-color: tomato;
   --secondary-color: gray;
@@ -58,39 +40,34 @@ body {
   --centered: 0 auto;
   --lh: 1.5;
 
-  --primary-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
-    0 10px 10px rgba(0, 0, 0, 0.22);
+  --primary-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
 }
-/* print button */
-.print {
-  top: 0.5em;
-  left: 1em;
-  position: absolute;
-  width: 50px;
-  height: 50px;
-
-  display: grid;
-  place-items: center;
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: 0.3s linear;
 }
-/* print icon */
-.print .fa {
+/* images */
+img {
+  box-sizing: content-box;
+  object-fit: cover;
+}
+/* body */
+body {
   width: var(--full-w);
-  height: var(--full-h);
-  font-size: 36px;
-  color: var(--white);
-  cursor: pointer;
+  line-height: var(--lh);
+  font-family: "Nunito Sans", sans-serif;
 }
-/* print icon hover effects */
-.print .fa:hover {
-  color: var(--black);
-}
+
 /* root div */
 #root {
   width: var(--full-w);
-  height: var(--full-h);
-  display: flex;
-  flex: 1;
-  flex-flow: row wrap;
+  display: var(--d-flex);
+  flex: 1 0 auto;
+  flex-flow: var(--f-row);
   background-color: var(--white);
 }
 
@@ -161,13 +138,17 @@ body {
 }
 /* social link icons */
 .sidebar .social-div .social-ul li a .fa {
-  color: var(--black);
   font-size: 36px;
 }
 /* social icons hover effects */
-.sidebar .social-div .social-ul li a .fa:hover {
-  color: var(--primary-color);
-  transform: scale(1.1);
+.twitter {
+  color: #1891c0;
+}
+.facebook {
+  color: #1714da;
+}
+.instagram {
+  color: #df2121;
 }
 
 /* main-content div */
@@ -242,7 +223,7 @@ body {
 /* education div */
 .main-content .education {
   padding: var(--pd);
-  color: var(--white);
+  color: var(--black);
 }
 .main-content .education ul {
   padding: var(--pd);
@@ -322,16 +303,15 @@ body {
 .main-content .languages-div .interests {
   width: var(--half-w);
 }
-
-@media only screen and (max-width: 600px) {
+/* media queries */
+@media only screen and (max-width: 780px) {
   body {
     height: var(--full-h);
   }
   #root {
-    display: flex;
-    flex-flow: column;
-    flex: 1;
-    width: var(--full-w);
+    display: var(--d-flex);
+    flex-flow: var(--f-col);
+    flex: 1 0 auto;
   }
   .sidebar {
     width: var(--full-w);
@@ -367,5 +347,9 @@ body {
   }
   .main-content .work-exp-div .exp {
     display: var(--d-block);
+  }
+  .main-content .languages-div .interests ul {
+    display: flex;
+    flex-flow: column;
   }
 }
